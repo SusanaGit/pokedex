@@ -5,5 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class PokemonService {
 
-  constructor() { }
+  private nextUrl: string;
+
+  constructor() {
+    this.nextUrl = 'https://pokeapi.co/api/v2/pokemon?offset=00&limit=20';
+  }
 }
